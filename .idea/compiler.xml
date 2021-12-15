@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="AlgoMaze" target="17" />
+      <module name="AlgoMaze" target="16" />
     </bytecodeTargetLevel>
   </component>
 </project>
