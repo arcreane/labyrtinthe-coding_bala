@@ -4,6 +4,7 @@ module com.example.algomaze {
 
     requires org.controlsfx.controls;
     requires com.dlsc.formsfx;
+    requires java.desktop;
 
     opens com.example.algomaze to javafx.fxml;
     exports com.example.algomaze;
