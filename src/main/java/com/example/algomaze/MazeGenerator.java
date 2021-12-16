@@ -24,6 +24,7 @@ public class MazeGenerator { // initialise the variable for the size of the maze
 
     public void display() throws IOException { // display the maze
         BufferedWriter writer = new BufferedWriter(new FileWriter("Waze.txt",false));
+        //draw it in our "waze.txt" so it becomes the solved ver
 
         for (int i = 0; i < ordinate; i++) {
 

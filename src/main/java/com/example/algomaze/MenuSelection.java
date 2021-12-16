@@ -22,7 +22,7 @@ public class MenuSelection {
         selection = sc.nextInt();
         return selection;
     }
-
+// menu to add while we display our labyrinth
     public static void menuFinish() throws IOException {
         Scanner sc = new Scanner(System.in);
         System.out.println("Did you finish ?");
@@ -30,9 +30,9 @@ public class MenuSelection {
         System.out.println("1 - quit or (RAGE QUIT)");
         System.out.println("2 - SOLVED ?!");
         int select = sc.nextInt();
-        if (select == 1) {
+        if (select == 1) { //typed 1 exit the game
             System.exit(0);
-        }else if (select ==2 ){
+        }else if (select ==2 ){ //typed 2 show a solved version
             InputStream n = new FileInputStream("Waze.txt");
             String[] lines = MazeSolver.readLines (n);
             char[][] maze2 = MazeSolver.decimateHorizontally (lines);

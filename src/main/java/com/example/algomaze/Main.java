@@ -2,9 +2,7 @@ package com.example.algomaze;
 
 import javax.swing.*;
 import java.awt.*;
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import static com.example.algomaze.MenuSelection.MenuData;
 import static com.example.algomaze.MenuSelection.menuFinish;
 
@@ -42,9 +40,9 @@ public class Main {
                         maze.display(); //Display the generated maze
                         menuFinish();
                     }
-                    case 4 -> SwingUtilities.invokeLater(() -> { //If user selects 4, resolve the maze
+                    case 4 -> SwingUtilities.invokeLater(() -> { //If user selects 4, resolve the maze, but it's animated
                         JFrame f = new JFrame(); //Create a new JFrame
-                        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //Close the window
+                        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //Close the window on 'x' click
                         f.setTitle("Maze Generator"); //Set the title of the window
                         f.setResizable(false); //Disable resizing
                         f.add(new MazeGeneratorResolver(24), BorderLayout.CENTER); //Add the maze resolver to the frame
@@ -52,7 +50,7 @@ public class Main {
                         f.setLocationRelativeTo(null); //Centers the window
                         f.setVisible(true); //Make the window visible
                     });
-                    case 5 -> System.exit(0);//If user selects 5, exit the program
+                    case 5 -> System.exit(0); //If user selects 5, exit the program
                     default -> {
                     }
                 }

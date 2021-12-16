@@ -1,5 +1,4 @@
 package com.example.algomaze;
-
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.util.*;
@@ -18,13 +17,6 @@ public class MazeSolver {
         return lines.toArray(new String[0]);
     }
 
-    /**
-     * Makes the maze half as wide (i.e. "+---+" becomes "+-+"), so that
-     * each cell in the maze is the same size horizontally as vertically.
-     * (Versus the expanded version, which looks better visually.)
-     * Also, converts each line of the maze from a String to a
-     * char[], because we'll want mutability when drawing the solution later.
-     */
     static char[][] decimateHorizontally(String[] lines) {
         final int width = (lines[0].length() + 1) / 2;
         char[][] c = new char[lines.length][width];
@@ -34,13 +26,8 @@ public class MazeSolver {
         return c;
     }
 
-    /**
-     * Given the maze, the x and y coordinates (which must be odd),
-     * and the direction we came from, return true if the maze is
-     * solvable, and draw the solution if so.
-     */
-    private static boolean solveMazeRecursively(char[][] maze,
-                                                int x, int y, int d) {
+    private static boolean solveMazeRecursively(char[][] maze, int x, int y, int d) {
+        //find a path into the maze
         boolean ok = false;
         for (int i = 0; i < 4 && !ok; i++)
             if (i != d)
@@ -79,21 +66,11 @@ public class MazeSolver {
         return ok;
     }
 
-    /**
-     * Solve the maze and draw the solution.  For simplicity,
-     * assumes the starting point is the lower right, and the
-     * ending point is the upper left.
-     */
     static void solveMaze(char[][] maze) {
         solveMazeRecursively(maze, maze[0].length - 2, maze.length - 2, -1);
     }
 
-    /**
-     * Opposite of decimateHorizontally().  Adds extra characters to make
-     * the maze "look right", and converts each line from char[] to
-     * String at the same time.
-     */
-    static String[] expandHorizontally(char[][] maze) {
+    static String[] expandHorizontally(char[][] maze) { // display it on horizontal
         char[] tmp = new char[3];
         String[] lines = new String[maze.length];
         for (int i = 0; i < maze.length; i++) {

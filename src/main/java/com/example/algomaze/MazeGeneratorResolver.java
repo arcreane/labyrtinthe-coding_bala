@@ -1,5 +1,4 @@
 package com.example.algomaze;
-
 import java.awt.*;
 import java.awt.event.*;
 import java.awt.geom.Path2D;
