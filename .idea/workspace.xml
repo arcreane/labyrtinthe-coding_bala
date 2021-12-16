@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0092a3c3-0084-49ea-84ab-6074adbe17f7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/algomaze/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/algomaze/HelloApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/algomaze/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/algomaze/HelloApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/algomaze/HelloController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/algomaze/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/algomaze/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/algomaze/MazeAlgo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/algomaze/MazeAlgo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/algomaze/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/algomaze/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/algomaze/MazeAlgo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/algomaze/MazeAlgo.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +44,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.MazeGenerator">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.algomaze.Main" />
       <module name="AlgoMaze" />
@@ -88,6 +84,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MazeSolver (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MazeSolver" />
+      <module name="AlgoMaze" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MazeSolver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.algomaze.MazeSolver" />
       <module name="AlgoMaze" />
@@ -101,26 +104,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestMaze" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.algomaze.TestMaze" />
-      <module name="AlgoMaze" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.algomaze.MazeGenerator" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.MazeGenerator2" />
         <item itemvalue="Application.MazeGenerator" />
         <item itemvalue="Application.MazeSolver" />
-        <item itemvalue="Application.TestMaze" />
+        <item itemvalue="Application.MazeSolver (1)" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.MazeGenerator2" />
       </list>
     </recent_temporary>
   </component>
@@ -132,7 +122,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639559326694</updated>
-      <workItem from="1639559328279" duration="10518000" />
+      <workItem from="1639559328279" duration="11606000" />
     </task>
     <servers />
   </component>

@@ -31,7 +31,7 @@ class MazeAlgo {
             System.out.println("|");
         }
         // draw the bottom line
-        for (int j = 0; j < x; j++) {
+        for (int j = 1; j < x; j++) {
             System.out.print("/---");
         }
         System.out.println("+");
