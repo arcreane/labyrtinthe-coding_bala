@@ -3,6 +3,7 @@ package com.example.algomaze;
 import java.util.Collections;
 import java.util.Arrays;
 
+
 /*
  * recursive backtracking algorithm
  */
