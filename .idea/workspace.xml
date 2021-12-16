@@ -8,9 +8,14 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/algomaze/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/algomaze/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/algomaze/MazeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/algomaze/MazeGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/algomaze/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/algomaze/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/algomaze/MazeGeneratorResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/algomaze/MazeGeneratorResolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/algomaze/MenuSelection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/algomaze/MenuSelection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/algomaze/Main.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/algomaze/MazeGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/algomaze/MazeGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/algomaze/MazeGeneratorResolver$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/algomaze/MazeGeneratorResolver$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/algomaze/MazeGeneratorResolver$Dir.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/algomaze/MazeGeneratorResolver$Dir.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/algomaze/MazeGeneratorResolver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/algomaze/MazeGeneratorResolver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/algomaze/MenuSelection.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +31,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -108,8 +121,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.MazeGenerator" />
         <item itemvalue="Application.MazeSolver" />
+        <item itemvalue="Application.MazeGenerator" />
         <item itemvalue="Application.MazeSolver (1)" />
         <item itemvalue="Application.MazeGenerator2" />
       </list>
@@ -123,7 +136,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639559326694</updated>
-      <workItem from="1639559328279" duration="16737000" />
+      <workItem from="1639559328279" duration="22629000" />
     </task>
     <servers />
   </component>

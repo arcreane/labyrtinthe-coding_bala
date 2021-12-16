@@ -1,5 +1,8 @@
 package com.example.algomaze;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Collections;
 import java.util.Arrays;
 
@@ -8,35 +11,44 @@ import java.util.Arrays;
  * recursive backtracking algorithm
  */
 public class MazeGenerator {
-    private final int x;
-    private final int y;
+    private final int abscissa;
+    private final int ordinate;
     private final int[][] maze;
 
     public MazeGenerator(int x, int y) {
-        this.x = x;
-        this.y = y;
-        maze = new int[this.x][this.y];
+        this.abscissa = x;
+        this.ordinate = y;
+        maze = new int[this.abscissa][this.ordinate];
         generateMaze(0, 0);
     }
 
-    public void display() {
-        for (int i = 0; i < y; i++) {
+    public void display() throws IOException {
+        BufferedWriter writer = new BufferedWriter(new FileWriter("Waze.txt",false));
+
+        for (int i = 0; i < ordinate; i++) {
             // draw the north edge
-            for (int j = 0; j < x; j++) {
+            for (int j = 0; j < abscissa; j++) {
                 System.out.print((maze[j][i] & 1) == 0 ? "+---" : "+   ");
+                writer.write((maze[j][i] & 1) == 0 ? "+---" : "+   ");
             }
             System.out.println("+");
+            writer.write("+ \n");
             // draw the west edge
-            for (int j = 0; j < x; j++) {
+            for (int j = 0; j < abscissa; j++) {
+                writer.write((maze[j][i] & 8) == 0 ? "|   " : "    ");
                 System.out.print((maze[j][i] & 8) == 0 ? "|   " : "    ");
             }
+            writer.write("|\n");
             System.out.println("|");
         }
         // draw the bottom line
-        for (int j = 0; j < x; j++) {
+        for (int j = 0; j < abscissa; j++) {
             System.out.print("+---");
+            writer.write("#---");
         }
         System.out.println("+");
+        writer.write("+\n");
+        writer.flush();
     }
 
     private void generateMaze(int cx, int cy) {
@@ -45,7 +57,7 @@ public class MazeGenerator {
         for (DIR dir : dirs) {
             int nx = cx + dir.dx;
             int ny = cy + dir.dy;
-            if (between(nx, x) && between(ny, y)
+            if (between(nx, abscissa) && between(ny, ordinate)
                     && (maze[nx][ny] == 0)) {
                 maze[cx][cy] |= dir.bit;
                 maze[nx][ny] |= dir.opposite.bit;

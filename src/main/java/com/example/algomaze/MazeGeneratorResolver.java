@@ -6,15 +6,16 @@ import java.awt.geom.Path2D;
 import java.util.*;
 import javax.swing.*;
 
+//------------------------------SWING SOLVER VERSION--------------------------------//
 public class MazeGeneratorResolver extends JPanel {
-    enum Dir {
+    enum Dir {                  //group of constants to use it everywhere by calling it
         N(1, 0, -1), S(2, 0, 1), E(4, 1, 0), W(8, -1, 0);
         final int bit;
         final int dx;
         final int dy;
         Dir opposite;
 
-        // use the static initializer to resolve forward references
+        //-------------use the static initializer to resolve forward references
         static {
             N.opposite = S;
             S.opposite = N;
@@ -22,7 +23,7 @@ public class MazeGeneratorResolver extends JPanel {
             W.opposite = E;
         }
 
-        Dir(int bit, int dx, int dy) {
+        Dir(int bit, int dx, int dy) { // initialize our constants
             this.bit = bit;
             this.dx = dx;
             this.dy = dy;
@@ -30,8 +31,8 @@ public class MazeGeneratorResolver extends JPanel {
     };
     final int nCols;
     final int nRows;
-    final int cellSize = 25;
-    final int margin = 25;
+    final int cellSize = 20;
+    final int margin = 20;
     final int[][] maze;
     LinkedList<Integer> solution;
 
@@ -97,7 +98,7 @@ public class MazeGeneratorResolver extends JPanel {
             path.lineTo(x, y);
         }
 
-        g.setColor(Color.orange);
+        g.setColor(Color.red);
         g.draw(path);
 
         g.setColor(Color.blue);

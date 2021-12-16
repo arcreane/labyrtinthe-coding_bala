@@ -2,11 +2,17 @@ package com.example.algomaze;
 
 import javax.swing.*;
 import java.awt.*;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+
 import static com.example.algomaze.MenuSelection.MenuData;
+import static com.example.algomaze.MenuSelection.menuFinish;
 
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+
             int userSelected;
             //Option selection
             do {
@@ -18,6 +24,7 @@ public class Main {
                         int y = args.length == 2 ? (Integer.parseInt(args[1])) : 5;
                         MazeGenerator maze = new MazeGenerator(x, y);
                         maze.display();
+                        menuFinish();
                     }
                     case 2 -> {
                         System.out.println("Labyrinth medium ★ selected\nthe game will start :");
@@ -25,6 +32,7 @@ public class Main {
                         int y = args.length == 2 ? (Integer.parseInt(args[1])) : 10;
                         MazeGenerator maze = new MazeGenerator(x, y);
                         maze.display();
+                        menuFinish();
                     }
                     case 3 -> {
                         System.out.println("Labyrinth hard ☠ selected\nthe game will start :");
@@ -32,6 +40,7 @@ public class Main {
                         int y = args.length == 2 ? (Integer.parseInt(args[1])) : 20;
                         MazeGenerator maze = new MazeGenerator(x, y);
                         maze.display();
+                        menuFinish();
                     }
                     case 4 -> SwingUtilities.invokeLater(() -> {
                         JFrame f = new JFrame();
@@ -43,12 +52,19 @@ public class Main {
                         f.setLocationRelativeTo(null);
                         f.setVisible(true);
                     });
-                    case 5 -> System.exit(0);
+                    case 5 -> {
+                        InputStream n = new FileInputStream("Waze.txt");
+                        String[] lines = MazeSolver.readLines (n);
+                        char[][] maze2 = MazeSolver.decimateHorizontally (lines);
+                        MazeSolver.solveMaze (maze2);
+                        String[] solvedLines = MazeSolver.expandHorizontally (maze2);
+                        for (String solvedLine : solvedLines) System.out.println(solvedLine);
+                    }
+                    case 6 -> System.exit(0);
                     default -> {
                     }
                 }
             }
-            while (userSelected > 5 );
+            while (userSelected > 6 || userSelected<1 );
     }
-
 }
