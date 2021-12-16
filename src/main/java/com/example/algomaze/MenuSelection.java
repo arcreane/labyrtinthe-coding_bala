@@ -1,6 +1,5 @@
 package com.example.algomaze;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Scanner;
@@ -18,7 +17,6 @@ public class MenuSelection {
         System.out.println("3 - Labyrinth hard ☠");
         System.out.println("4 - Animated labyrinth solved ");
         System.out.println("5 - Leave");
-        System.out.println("Your difficulty is: ");
         selection = sc.nextInt();
         return selection;
     }

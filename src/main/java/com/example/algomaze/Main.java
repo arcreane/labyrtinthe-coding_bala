@@ -16,6 +16,7 @@ public class Main {
                 userSelected = MenuData(); //Menu selection
                 switch (userSelected) { //Switch case for menu selection
                     case 1 -> { //If user selects 1, run the maze generation algorithm in easy mode
+                        System.out.println("Your difficulty is: ");
                         System.out.println("Labyrinth easy ♥ selected\nthe game will start :");
                         int x = args.length >= 1 ? (Integer.parseInt(args[0])) : 5; // Set the x and y size of the maze to 5 by 5
                         int y = args.length == 2 ? (Integer.parseInt(args[1])) : 5;
@@ -24,6 +25,7 @@ public class Main {
                         menuFinish();
                     }
                     case 2 -> { //If user selects 2, run the maze generation algorithm in medium mode
+                        System.out.println("Your difficulty is: ");
                         System.out.println("Labyrinth medium ★ selected\nthe game will start :");
                         int x = args.length >= 1 ? (Integer.parseInt(args[0])) : 10; // Set the x and y size of the maze to 10 by 10
                         int y = args.length == 2 ? (Integer.parseInt(args[1])) : 10;
@@ -32,6 +34,7 @@ public class Main {
                         menuFinish();
                     }
                     case 3 -> { //If user selects 3, run the maze generation algorithm in hard mode
+                        System.out.println("Your difficulty is: ");
                         System.out.println("Labyrinth hard ☠ selected\nthe game will start :");
                         int x = args.length >= 1 ? (Integer.parseInt(args[0])) : 20; // Set the x and y size of the maze to 20 by 20
                         int y = args.length == 2 ? (Integer.parseInt(args[1])) : 20;
@@ -50,7 +53,10 @@ public class Main {
                         f.setLocationRelativeTo(null); //Centers the window
                         f.setVisible(true); //Make the window visible
                     });
-                    case 5 -> System.exit(0); //If user selects 5, exit the program
+                    case 5 -> {
+                        System.out.println("you choose to leave");
+                        System.exit(0); //If user selects 5, exit the program
+                    }
                     default -> {
                     }
                 }
