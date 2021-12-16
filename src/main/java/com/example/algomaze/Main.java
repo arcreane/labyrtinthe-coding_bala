@@ -5,7 +5,6 @@ import java.awt.*;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-
 import static com.example.algomaze.MenuSelection.MenuData;
 import static com.example.algomaze.MenuSelection.menuFinish;
 
@@ -53,20 +52,11 @@ public class Main {
                         f.setLocationRelativeTo(null); //Centers the window
                         f.setVisible(true); //Make the window visible
                     });
-                    case 5 -> {
-                        InputStream n = new FileInputStream("Waze.txt");
-                        String[] lines = MazeSolver.readLines (n);
-                        char[][] maze2 = MazeSolver.decimateHorizontally (lines);
-                        MazeSolver.solveMaze (maze2);
-                        String[] solvedLines = MazeSolver.expandHorizontally (maze2);
-                        for (String solvedLine : solvedLines) System.out.println(solvedLine);
-                    }
-                    case 6 -> System.exit(0);//If user selects 5, exit the program
+                    case 5 -> System.exit(0);//If user selects 5, exit the program
                     default -> {
                     }
                 }
             }
             while (userSelected > 6 || userSelected<1 ); // Loop until user selects 5
-
     }
 }

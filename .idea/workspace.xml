@@ -5,12 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0092a3c3-0084-49ea-84ab-6074adbe17f7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Waze.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Waze.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/algomaze/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/algomaze/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/algomaze/MazeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/algomaze/MazeGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/algomaze/MazeGeneratorResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/algomaze/MazeGeneratorResolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/algomaze/MazeSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/algomaze/MazeSolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/algomaze/MenuSelection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/algomaze/MenuSelection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/algomaze/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/algomaze/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/algomaze/MazeGenerator$Dir.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/algomaze/MazeGenerator$Dir.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/algomaze/MazeGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/algomaze/MazeGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/algomaze/MazeGeneratorResolver$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/algomaze/MazeGeneratorResolver$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/algomaze/MazeGeneratorResolver$Dir.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/algomaze/MazeGeneratorResolver$Dir.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/algomaze/MazeGeneratorResolver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/algomaze/MazeGeneratorResolver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/algomaze/MazeSolver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/algomaze/MazeSolver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/algomaze/MenuSelection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/algomaze/MenuSelection.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

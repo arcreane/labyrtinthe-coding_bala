@@ -1,4 +1,8 @@
 package com.example.algomaze;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.Scanner;
 
 public class MenuSelection {
@@ -13,21 +17,28 @@ public class MenuSelection {
         System.out.println("2 - Labyrinth medium ★");
         System.out.println("3 - Labyrinth hard ☠");
         System.out.println("4 - Animated labyrinth solved ");
-        System.out.println("5 - Solved labyrinth in terminal");
-        System.out.println("6- Leave");
+        System.out.println("5 - Leave");
         System.out.println("Your difficulty is: ");
         selection = sc.nextInt();
         return selection;
     }
 
-    public static void menuFinish() {
+    public static void menuFinish() throws IOException {
         Scanner sc = new Scanner(System.in);
         System.out.println("Did you finish ?");
         System.out.println("---------------------");
         System.out.println("1 - quit or (RAGE QUIT)");
+        System.out.println("2 - SOLVED ?!");
         int select = sc.nextInt();
         if (select == 1) {
             System.exit(0);
+        }else if (select ==2 ){
+            InputStream n = new FileInputStream("Waze.txt");
+            String[] lines = MazeSolver.readLines (n);
+            char[][] maze2 = MazeSolver.decimateHorizontally (lines);
+            MazeSolver.solveMaze (maze2);
+            String[] solvedLines = MazeSolver.expandHorizontally (maze2);
+            for (String solvedLine : solvedLines) System.out.println(solvedLine);
         }
     }
 }
