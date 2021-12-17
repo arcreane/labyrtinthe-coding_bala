@@ -45,7 +45,7 @@ public class MazeGenerator { // initialise the variable for the size of the maze
         // draw the bottom line
         for (int j = 0; j < abscissa; j++) {
             System.out.print("+---");
-            writer.write("#---");
+            writer.write("+---");
         }
         System.out.println("+");
         writer.write("+\n");

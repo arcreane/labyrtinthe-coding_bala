@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0092a3c3-0084-49ea-84ab-6074adbe17f7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/algomaze/MazeSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/algomaze/MazeSolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgoMaze.jar" beforeDir="false" afterPath="$PROJECT_DIR$/AlgoMaze.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Waze.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Waze.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/algomaze/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/algomaze/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/algomaze/MazeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/algomaze/MazeGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/algomaze/MenuSelection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/algomaze/MenuSelection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/algomaze/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/algomaze/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/algomaze/MazeGenerator$Dir.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/algomaze/MazeGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/algomaze/MazeGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/algomaze/MenuSelection.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +129,6 @@
       <updated>1639559326694</updated>
       <workItem from="1639559328279" duration="16737000" />
       <workItem from="1639663258844" duration="3726000" />
-      <workItem from="1639748557476" duration="305000" />
     </task>
     <servers />
   </component>
@@ -138,6 +145,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
