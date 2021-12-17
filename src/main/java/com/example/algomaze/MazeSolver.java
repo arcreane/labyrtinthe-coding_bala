@@ -9,8 +9,8 @@ public class MazeSolver {
     /**
      * Reads a file into an array of strings, one per line.
      */
-    static String[] readLines(InputStream f) throws IOException {
-        BufferedReader r =
+    static String[] readLines(InputStream f) throws IOException { // read the file
+        BufferedReader r = // read the file into an array of strings
                 new BufferedReader(new InputStreamReader(f, StandardCharsets.US_ASCII));
         ArrayList<String> lines = new ArrayList<>();
         String line;
@@ -19,7 +19,7 @@ public class MazeSolver {
         return lines.toArray(new String[0]);
     }
 
-    static char[][] decimateHorizontally(String[] lines) {
+    static char[][] decimateHorizontally(String[] lines) { // display it on horizontal
         final int width = (lines[0].length() + 1) / 2;
         char[][] c = new char[lines.length][width];
         for (int i = 0; i < lines.length; i++)
@@ -28,7 +28,7 @@ public class MazeSolver {
         return c;
     }
 
-    private static boolean solveMazeRecursively(char[][] maze, int x, int y, int d) {
+    private static boolean solveMazeRecursively(char[][] maze, int x, int y, int d) { // recursive function to solve the maze
         //find a path into the maze
         boolean ok = false;
         for (int i = 0; i < 4 && !ok; i++)
@@ -37,19 +37,19 @@ public class MazeSolver {
                     // 0 = up, 1 = right, 2 = down, 3 = left
                     case 0:
                         if (maze[y - 1][x] == ' ')
-                            ok = solveMazeRecursively(maze, x, y - 2, 2);
+                            ok = solveMazeRecursively(maze, x, y - 2, 2); // go up
                         break;
                     case 1:
                         if (maze[y][x + 1] == ' ')
-                            ok = solveMazeRecursively(maze, x + 2, y, 3);
+                            ok = solveMazeRecursively(maze, x + 2, y, 3); // go right
                         break;
                     case 2:
                         if (maze[y + 1][x] == ' ')
-                            ok = solveMazeRecursively(maze, x, y + 2, 0);
+                            ok = solveMazeRecursively(maze, x, y + 2, 0); // go down
                         break;
                     case 3:
                         if (maze[y][x - 1] == ' ')
-                            ok = solveMazeRecursively(maze, x - 2, y, 1);
+                            ok = solveMazeRecursively(maze, x - 2, y, 1); // go left
                         break;
                 }
         // check for end condition
@@ -71,7 +71,7 @@ public class MazeSolver {
 
     static void solveMaze(char[][] maze) {
         solveMazeRecursively(maze, maze[0].length - 2, maze.length - 2, -1);
-    }
+    } // solve the maze using a recursive function
 
     static String[] expandHorizontally(char[][] maze) { // display it on horizontal
         char[] tmp = new char[3];

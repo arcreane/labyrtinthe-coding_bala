@@ -39,38 +39,38 @@ public class MenuSelection {
             for (String solvedLine : solvedLines) System.out.println(solvedLine);
         }
     }
-        public static void time(){
+        public static void time(){ //time to solve the maze
             Scanner sc = new Scanner(System.in);
             int timeline = 0;
-            long start = System.currentTimeMillis();
+            long start = System.currentTimeMillis(); //start time
             while (true) {
                 try {
-                    Thread.sleep(1000);
+                    Thread.sleep(1000); //wait 1 second
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                long elapsedTime = System.currentTimeMillis() - start;
-                elapsedTime = elapsedTime / 1000;
-                String seconds = Integer.toString((int) (elapsedTime % 60));
-                String minutes = Integer.toString((int) ((elapsedTime % 3600) / 60));
-                String hours = Integer.toString((int) (elapsedTime / 3600));
-                if (seconds.length() < 2) {
+                long elapsedTime = System.currentTimeMillis() - start; // time elapsed
+                elapsedTime = elapsedTime / 1000; // convert to seconds
+                String seconds = Integer.toString((int) (elapsedTime % 60)); // convert to seconds
+                String minutes = Integer.toString((int) ((elapsedTime % 3600) / 60)); // convert to minutes
+                String hours = Integer.toString((int) (elapsedTime / 3600)); // convert to hours
+                if (seconds.length() < 2) { // add a 0 if the number of seconds is less than 2
                     seconds = "0" + seconds;
                 }
-                if (minutes.length() < 2) {
+                if (minutes.length() < 2) { // add a 0 if the number of minutes is less than 2
                     minutes = "0" + minutes;
                 }
-                if (hours.length() < 2) {
+                if (hours.length() < 2) { // add a 0 if the number of hours is less than 2
                     hours = "0" + hours;
                 }
                 String writeThis = hours + ":" + minutes + ":" + seconds;
-                for (int i = 0; i < timeline; i++) {
+                for (int i = 0; i < timeline; i++) { // print the time
                     System.out.print("\b");
                 }
-                System.out.print(writeThis);
-                timeline = writeThis.length();
+                System.out.print(writeThis); // print the time
+                timeline = writeThis.length(); // update the timeline
                 int tiebreak = sc.nextInt();
-                if(tiebreak == 1){
+                if(tiebreak == 1){ // if the user type 1 the game will stop
                     break;
                 }
             }
