@@ -3,8 +3,8 @@ package com.example.algomaze;
 import javax.swing.*;
 import java.awt.*;
 import java.io.IOException;
-import static com.example.algomaze.MenuSelection.MenuData;
-import static com.example.algomaze.MenuSelection.menuFinish;
+
+import static com.example.algomaze.MenuSelection.*;
 
 
 public class Main {

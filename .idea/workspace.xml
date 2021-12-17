@@ -5,18 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0092a3c3-0084-49ea-84ab-6074adbe17f7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/AlgoMaze_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_dlsc_formsfx_formsfx_core_11_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_controlsfx_controlsfx_11_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_17_ea_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_mac_17_ea_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_17_ea_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_mac_17_ea_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_17_ea_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_mac_17_ea_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_17_ea_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_mac_17_ea_11.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgoMaze.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AlgoMaze.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Waze.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Waze.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/algomaze/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/algomaze/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/algomaze/MazeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/algomaze/MazeGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/algomaze/MazeSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/algomaze/MazeSolver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/algomaze/MenuSelection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/algomaze/MenuSelection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/algomaze/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/algomaze/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/algomaze/MazeGenerator$Dir.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/algomaze/MazeGenerator$Dir.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/algomaze/MazeGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/algomaze/MazeGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/algomaze/MazeGeneratorResolver$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/algomaze/MazeGeneratorResolver$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/algomaze/MazeGeneratorResolver$Dir.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/algomaze/MazeGeneratorResolver$Dir.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/algomaze/MazeGeneratorResolver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/algomaze/MazeGeneratorResolver.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/algomaze/MazeSolver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/algomaze/MazeSolver.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/algomaze/MenuSelection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/algomaze/MenuSelection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,9 +59,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.3873563" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunManager" selected="Application.Main">

@@ -3,6 +3,8 @@ import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.util.*;
 
+import static com.example.algomaze.MazeGenerator.clearScreen;
+
 public class MazeSolver {
     /**
      * Reads a file into an array of strings, one per line.
@@ -55,14 +57,15 @@ public class MazeSolver {
             ok = true;
         // once we have found a solution, draw it as we unwind the recursion
         if (ok) {
-            maze[y][x] = '♞';
-            switch (d) {
-                case 0 -> maze[y - 1][x] = '♞';
-                case 1 -> maze[y][x + 1] = '♞';
-                case 2 -> maze[y + 1][x] = '♞';
-                case 3 -> maze[y][x - 1] = '♞';
-            }
+            maze[y][x] = '*';
+//            switch (d) {
+//                case 0 -> maze[y - 1][x] = '♞';
+//                case 1 -> maze[y][x + 1] = '♞';
+//                case 2 -> maze[y + 1][x] = '*';
+//                case 3 -> maze[y][x - 1] = '*';
+//            }
         }
+        clearScreen();
         return ok;
     }
 

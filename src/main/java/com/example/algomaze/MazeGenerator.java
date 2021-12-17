@@ -50,6 +50,7 @@ public class MazeGenerator { // initialise the variable for the size of the maze
         System.out.println("+");
         writer.write("+\n");
         writer.flush();
+        clearScreen();
     }
 
 
@@ -92,5 +93,9 @@ public class MazeGenerator { // initialise the variable for the size of the maze
             this.dx = dx;
             this.dy = dy;
         }
+    }
+    public static void clearScreen() {
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
     }
 }
